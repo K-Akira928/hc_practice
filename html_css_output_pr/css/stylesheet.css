@@ -4,16 +4,14 @@
 .container {
     display: grid;
     grid-template-columns: 12px 1fr 18px;
-    grid-template-rows: 65px auto;
-    gap: 30px 0;
+    grid-template-rows: 65px 52px auto;
 }
 
 header {
-    outline: 1px solid #000;
-    grid-column: 2;
+    grid-column: 1 / 4;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    border-bottom: 1px solid#E4ECF3;
 }
 
 .header-icon {
@@ -47,4 +45,21 @@ header {
     padding: 5px 10px;
     border-radius: 7px;
     margin-left: 25px;
+}
+
+aside {
+    display: flex;
+    grid-column: 1 / 4;
+    border-bottom: 1px solid #E4ECF3;
+    padding: 0 20px;
+}
+
+aside .user-info {
+    align-items: center;
+    outline: 1px solid #000;
+    display: flex;
+}
+
+.user-info img {
+    height: 60%;
 }
