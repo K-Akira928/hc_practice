@@ -1,16 +1,50 @@
 /* モバイル~タブレット用 */
 
+
 .container {
     display: grid;
-    grid-template-columns: 25px 1fr 25px;
-    grid-template-rows: 60px auto;
+    grid-template-columns: 12px 1fr 18px;
+    grid-template-rows: 65px auto;
     gap: 30px 0;
 }
 
 header {
+    outline: 1px solid #000;
     grid-column: 2;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 
-.header-icon  {
-    height: 50px;
+.header-icon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header-icon img {
+    outline: 1px solid #000;
+    display: inline-block;
+    height: 50%;
+}
+
+.header-title {
+    font-size: 26px;
+    font-weight: 800;
+    color: #000;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-login {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #3EA8FF;
+    padding: 5px 10px;
+    border-radius: 7px;
+    margin-left: 25px;
 }
