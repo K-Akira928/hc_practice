@@ -42,7 +42,373 @@
         </aside>
 
         <main>
-            
+            <div class="article-title">
+                <img width="17%" src="./images/📝.svg" alt="メモと鉛筆">
+                <h2>Zennの2種類の執筆方法について</h2>
+                <p>2020/09/06に公開・約1,200字</p>
+            </div>
+
+            <div class="article-tag">
+
+                <a class="tag-zenn">
+                    <img src="./images/icon_accents.png" alt="">
+                    <p>Zenn</p>
+                </a>
+                <a class="tag-tech">
+                    <img src="./images/tech-icon.svg" alt="">
+                    <p>Tech</p>
+                </a>
+            </div>
+
+            <article>
+                <p>このページではZennで記事や本を作成するときの執筆環境について紹介します。</p>
+                <h1>Zenn の執筆方法は 2 種類</h1>
+                <p>Zennのコンテンツは次のいずれかの方法で作成します。</p>
+
+                <sectio class="section-01">             
+                    <h2>1. Webエディター</h2>
+                    <img src="./images/content_img01.png" alt="">
+                    <p>ブラウザ上で動くエディターです。Zennにログインした状態で使用します。</p>
+                    
+                    <details>
+                        <summary>ショートカットを使用しよう</summary>
+                        <p>
+                            オンラインのmarkdownエディターでは、以下のショートカットを使用できます。
+                            <ul>
+                                <li>Ctrl + P（プレビュー）：markdownがどのように表示されるかをチェックできます。
+                                    もう一度ショートカットを実行すると、エディターに戻ります。
+                                </li>
+                                <li>Ctrl + S（内容の保存）：変更内容を保存します。</li>
+                                <li>
+                                    Ctrl + I（埋め込み）：ツイートや YouTube、CodePen、SpeakerDeck 
+                                    などの埋め込みコンテンツを挿入するためのモーダルが表示されます。
+                                </li>
+                            </ul>
+                            ※ Mac の場合はCtrlの代わりに⌘キーを使用します。
+                        </p>
+                    </details>
+
+                </section>
+
+                <section class="section-02">
+                    <h2>2. ローカルのテキストエディター + CLI</h2>
+                    <img src="./images/content_img02.png" alt="">
+                    <img src="./images/content_img03.png" alt="">
+                    <p>
+                        自分の好きな環境で執筆したい方は<b>GitHub リポジトリとの連携機能</b>を利用することをおすすめします。
+                        リポジトリ連携をすると、特定のブランチに変更があったときに自動でコンテンツがzenn.devに反映されるようになります。
+                    </p>
+                </section>
+
+                <section class="section-03">
+                    <p>📘 <a href="#">Zenn と GitHub リポジトリを連携する →</a></p>
+                    <p>
+                        リポジトリ連携時には、ローカルでmarkdownファイルを作成し、好きなテキストエディターで編集を行います。
+                        Zenn CLIを使うことでブラウザでプレビューしながら執筆することが可能になります。
+                    </p>
+                    <p>📘 <a href="#">Zenn CLI を導入する →</a></p>
+                    <p>
+                        オンラインエディターを使う場合も、CLIを使う場合もmarkdownの書き方は変わりません。
+                        具体的な記法は下記のリンク先をご覧ください。
+                    </p>
+                    <p>📘 <a href="#">Zenn のmarkdown記法 →</a></p>
+                </section>
+            </article>
+
+            <div class="article-foot">
+                <a class="github-button">
+                    <i class="fa-brands fa-github fa-lg github-icon"></i>
+                    <p>GitHubで編集を提案</p>
+                </a>
+
+                <a class="like-button">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa-solid fa-circle fa-stack-2x circle-icon" style="color: #EDF2F7;"></i>
+                        <i class="fa-regular fa-heart fa-stack-1x hart-icon" style="color: #93A5B1;"></i>
+                    </span>         
+                </a>
+
+                </a>
+
+                <div class="foot-right-button">
+                    <a class="report-button">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+
+                    <a class="tweet-button">
+                        <i class="fa-brands fa-twitter"></i>
+                        <p>ツイート</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="author-twitter">
+                <img src="./images/icon.jpeg">
+
+                <div class="text">
+                    <h3 class="author-twitter-name">Zenn公式</h3>
+                    <p>Zennの使い方や開発状況を発信する公式アカウントです。</p>
+                </div>
+                
+                <div class="author-twitter-button">
+                    <a class="author-follow-button">
+                        <p>フォロー</p>
+                    </a>
+                    <a class="author-github-fa">
+                        <i class="fa-brands fa-github fa-lg"></i>
+                    </a>
+                    <a class="author-twitter-fa">
+                        <i class="fa-brands fa-twitter fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="comments-form">
+                <h3>Discussion</h3>
+                <img src="./images/discussion.png">
+
+                <div class="login-comment">
+                    <p class="login-message">ログインするとコメントできます</p>
+                    <a>
+                        <p>Login</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="posts-nav">
+                <h2>Read next</h2>
+
+                <div class="post">
+                    <figure>
+                        <img src="./images/🔖.svg" height="70%">
+                    </figure>
+                    <div class="post-right">
+                        <h3>Zennとdiff記法について</h3>
+
+                        <div class="post-info">
+                            <a class="post-user">
+                                <img src="./images/unnamed.jpg">
+                                <p class="user-name">kkiyama117</p>
+                            </a>
+
+                            <p class="post-date">2021/01/28</p>
+
+                            <div class="post-like">
+                                <i class="fa-regular fa-heart"></i>
+                                <p>51</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <figure>
+                            <img src="./images/🐀.svg" height="70%">
+                        </figure>
+                        <div class="post-right">
+                            <h3>GitHub ActionsでZennブログの校正を自動化してみた</h3>
+    
+                            <div class="post-info">
+                                <a class="post-user">
+                                    <img src="./images/fb4d583c3c.jpeg">
+                                    <p class="user-name">ユータ</p>
+                                </a>
+    
+                                <p class="post-date">2021/01/28</p>
+    
+                                <div class="post-like">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>51</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <figure>
+                            <img src="./images/📚.svg" height="70%">
+                        </figure>
+                        <div class="post-right">
+                            <h3>zenn-cli + reviewdog + textlint + GitHub Actions で執筆体験を最高にする</h3>
+    
+                            <div class="post-info">
+                                <a class="post-user">
+                                    <img src="./images/7a2cacc0df.jpeg">
+                                    <p class="user-name">serima</p>
+                                </a>
+    
+                                <p class="post-date">2021/01/28</p>
+    
+                                <div class="post-like">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>51</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <figure>
+                            <img src="./images/🌟.svg" height="70%">
+                        </figure>
+                        <div class="post-right">
+                            <h3>Zenn や Qiita や AtCoder のバッジを生成できるサービスを公開しました</h3>
+    
+                            <div class="post-info">
+                                <a class="post-user">
+                                    <img src="./images/fb4d583c3c.jpeg">
+                                    <p class="user-name">ユータ</p>
+                                </a>
+    
+                                <p class="post-date">2021/01/28</p>
+    
+                                <div class="post-like">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>51</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <figure>
+                            <img src="./images/👩_💻.svg" height="70%">
+                        </figure>
+                        <div class="post-right">
+                            <h3>Next.js製 個人ブログに zenn-markdown-html と zenn-content-css を導入する</h3>
+    
+                            <div class="post-info">
+                                <a class="post-user">
+                                    <img src="./images/fb4d583c3c.jpeg">
+                                    <p class="user-name">ユータ</p>
+                                </a>
+    
+                                <p class="post-date">2021/01/28</p>
+    
+                                <div class="post-like">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>51</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <figure>
+                            <img src="./images/🍜.svg" height="70%">
+                        </figure>
+                        <div class="post-right">
+                            <h3>3分できる即席GitHubプロフィール</h3>
+    
+                            <div class="post-info">
+                                <a class="post-user">
+                                    <img src="./images/fb4d583c3c.jpeg">
+                                    <p class="user-name">ユータ</p>
+                                </a>
+    
+                                <p class="post-date">2021/01/28</p>
+    
+                                <div class="post-like">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>51</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <figure>
+                            <img src="./images/🧜_♀️.svg" height="70%">
+                        </figure>
+                        <div class="post-right">
+                            <h3>Zennが mermaid.js によるダイアグラム表記に対応したので試す</h3>
+    
+                            <div class="post-info">
+                                <a class="post-user">
+                                    <img src="./images/fb4d583c3c.jpeg">
+                                    <p class="user-name">ユータ</p>
+                                </a>
+    
+                                <p class="post-date">2021/01/28</p>
+    
+                                <div class="post-like">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>51</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <figure>
+                            <img src="./images/🍣.svg" height="70%">
+                        </figure>
+                        <div class="post-right">
+                            <h3>ZennのバッジをFastAPI+Vercelでお手軽に作る</h3>
+    
+                            <div class="post-info">
+                                <a class="post-user">
+                                    <img src="./images/fb4d583c3c.jpeg">
+                                    <p class="user-name">ユータ</p>
+                                </a>
+    
+                                <p class="post-date">2021/01/28</p>
+    
+                                <div class="post-like">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>51</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <figure>
+                            <img src="./images/📝.svg" height="70%">
+                        </figure>
+                        <div class="post-right">
+                            <h3>4ステップでGithubからZennに記事を公開してみる(トラブルシューティング付き)</h3>
+    
+                            <div class="post-info">
+                                <a class="post-user">
+                                    <img src="./images/fb4d583c3c.jpeg">
+                                    <p class="user-name">ユータ</p>
+                                </a>
+    
+                                <p class="post-date">2021/01/28</p>
+    
+                                <div class="post-like">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>51</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post">
+                        <figure>
+                            <img src="./images/🚀.svg" height="70%">
+                        </figure>
+                        <div class="post-right">
+                            <h3>Zenn の VSCode Web 拡張にプルリクエストしてみた</h3>
+    
+                            <div class="post-info">
+                                <a class="post-user">
+                                    <img src="./images/fb4d583c3c.jpeg">
+                                    <p class="user-name">ユータ</p>
+                                </a>
+    
+                                <p class="post-date">2021/01/28</p>
+    
+                                <div class="post-like">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>51</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </main>
 
         <footer>

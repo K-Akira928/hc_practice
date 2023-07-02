@@ -4,14 +4,15 @@
 .container {
     display: grid;
     grid-template-columns: 12px 1fr 18px;
-    grid-template-rows: 65px 52px auto;
+    grid-template-rows: 65px 55px auto;
+    margin: 0 auto;
 }
 
 header {
     grid-column: 1 / 4;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid#E4ECF3;
+    border-bottom: 1px solid #E4ECF3;
 }
 
 .header-icon {
@@ -52,14 +53,125 @@ aside {
     grid-column: 1 / 4;
     border-bottom: 1px solid #E4ECF3;
     padding: 0 20px;
+    justify-content: space-between;
 }
 
-aside .user-info {
-    align-items: center;
+aside .author-info {
     outline: 1px solid #000;
     display: flex;
+    align-items: center;
+    padding-right: 40%;
+    text-decoration: none;
 }
 
-.user-info img {
-    height: 60%;
+.author-info img {
+    height: 70%;
+    border-radius: 50%;
+}
+
+.author-name {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    margin-left: 8px;
+    color: #000;
+}
+
+.toc {
+    align-items: center;
+    display: flex;
+    margin: 0 0 0 auto;
+}
+
+.toc-down {
+    margin: 5px 0 0 5px;
+}
+
+.toc p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #65717b;
+}
+
+.like-button {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 18px 1fr 23px;
+    grid-template-rows: 278px 85px;
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+.article-title {
+    grid-column: 1 / 4;
+    background-color: #EDF2F7;
+}
+
+.article-title img {
+    margin-top: 54px;
+    margin-bottom: 18px;
+}
+
+.article-title h2 {
+    font-size: 22px;
+    font-weight: 700px;
+    margin-bottom: 25px;
+}
+
+.article-title p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #65717b;
+}
+
+.article-tag {
+    display: flex;
+    grid-column: 2;
+}
+
+.tag-zenn, .tag-tech {
+    display: flex;
+    align-items: center;
+    border: 1px solid #E4ECF3;
+    padding: 0 8px;
+    margin: 28px 0;
+    border-radius: 15px;
+}
+
+.tag-zenn p, .tag-tech p{
+    font-size: 12px;
+    font-weight: 400px;
+    line-height: 16px;
+    padding-left: 4px;
+}
+
+.tag-zenn img, .tag-tech img {
+    height: 27px;
+}
+
+.tag-tech {
+    margin-left: 8px;
+}
+
+article {
+    text-align: left;
+    grid-column: 2;
+}
+
+article p {
+    line-height: 30px;
+}
+
+article h2 {
+    margin-top: 30px;
+}
+
+article img {
+    width: 100%;
 }
