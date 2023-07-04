@@ -383,7 +383,6 @@ details[open] summary {
 .loginComment {
     width: 100%;
     border-top: 1px solid #D6E3ED;
-    border-bottom: 1px solid #D6E3ED;
     padding-bottom: 30px;
 }
 
@@ -467,7 +466,6 @@ details[open] summary {
 }
 
 .postUser {
-    outline: 1px solid red;
     display: flex;
     align-items: flex-start;
     align-items: center;
@@ -556,4 +554,29 @@ footer .footerAnnounce {
 .footerClassmethod {
     text-align: center;
     margin-top: 15px;
+}
+
+@media screen and (min-width: 577px) {
+    .container {
+        display: grid;
+        grid-template-columns: 25px 1fr 25px;
+    }
+
+    main {
+        grid-column: 2;
+    }
+
+    .articleTag {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .authorTwitter {
+        border-radius: 0 0 20px 20px;
+        margin-bottom: 30px;
+    }
+
+    .commentsForm {
+        border: none;
+        border-radius: 20px;
+    }
 }
