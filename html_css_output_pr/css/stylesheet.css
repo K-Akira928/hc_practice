@@ -1,9 +1,13 @@
 /* モバイル~タブレット用 */
 
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif, "Segoe UI Emoji";
+    background-color: #EDF2F7;
+}
 
 .container {
     display: grid;
-    grid-template-columns: 10px 1fr 10px;
+    grid-template-columns: auto;
     grid-template-rows: 65px 55px auto;
     margin: 0 auto;
 }
@@ -13,63 +17,66 @@ header {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #E4ECF3;
+    background-color: #fff;
 }
 
-.header-icon {
+.headerLogo {
     display: flex;
     align-items: center;
     text-decoration: none;
+    margin-left: 10px;
 }
 
-.header-icon img {
-    outline: 1px solid #000;
-    display: inline-block;
-    height: 50%;
+.headerLogo img {
+    height: 35px;
 }
 
-.header-title {
+.headerLogo p {
     font-size: 26px;
     font-weight: 800;
     color: #000;
 }
 
-.header-right {
+.headerRight {
     display: flex;
     align-items: center;
 }
 
-.header-login {
+.headerLoginButton {
+    font-family: Inter, BlinkMacSystemFont, Arial, sans-serif;
     font-size: 15px;
     font-weight: 600;
     color: #fff;
     background-color: #3EA8FF;
-    padding: 5px 10px;
+    padding: 8px 12px;
     border-radius: 7px;
     margin-left: 25px;
+    margin-right: 17px;
 }
 
 aside {
+    background-color: #fff;
     display: flex;
+    align-items: center;
     grid-column: 1 / 4;
-    border-bottom: 1px solid #E4ECF3;
     padding: 0 20px;
-    justify-content: space-between;
+    border-bottom: 1px solid #E4ECF3;
 }
 
-aside .author-info {
-    outline: 1px solid #000;
+.authorInfo {
     display: flex;
     align-items: center;
     padding-right: 40%;
     text-decoration: none;
 }
 
-.author-info img {
-    height: 70%;
+.authorInfo img {
+    height: 35px;
     border-radius: 50%;
 }
 
-.author-name {
+.authorInfo p {
+    white-space: nowrap;
     font-size: 14px;
     line-height: 25px;
     font-weight: 600;
@@ -78,91 +85,108 @@ aside .author-info {
 }
 
 .toc {
-    align-items: center;
     display: flex;
+    align-items: center;
     margin: 0 0 0 auto;
 }
 
-.toc-down {
-    margin: 5px 0 0 5px;
+.toc i {
+    margin: 5px 10px 0 5px;
 }
 
 .toc p {
+    white-space: nowrap;
     font-size: 15px;
     font-weight: 400;
     color: #65717b;
 }
 
-.like-button {
+.likeButton {
+    width: 35px;
+    height: 35px;
+    background-color: #EDF2F7;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     margin-left: 10px;
 }
 
+.likeButton i {
+    margin: 0 auto;
+}
+
 main {
     display: grid;
-    grid-template-columns: 18px 1fr 23px;
+    grid-template-columns: auto;
     grid-template-rows: 278px 85px auto;
     grid-column: 1 / 4;
     text-align: center;
 }
 
-.article-title {
+
+.articleTitle {
     grid-column: 1 / 4;
-    background-color: #EDF2F7;
 }
 
-.article-title img {
+.articleTitle img {
     margin-top: 54px;
     margin-bottom: 18px;
 }
 
-.article-title h2 {
+.articleTitle h2 {
     font-size: 22px;
     font-weight: 700px;
     line-height: 34px;
     margin-bottom: 25px;
 }
 
-.article-title p {
+.articleTitle p {
     font-size: 15px;
     font-weight: 400;
     line-height: 20px;
     color: #65717b;
 }
 
-.article-tag {
+.articleTag {
     display: flex;
-    grid-column: 2;
+    align-items: center;
+    grid-column: 1 / 4;
+    background-color: #fff;
 }
 
-.tag-zenn, .tag-tech {
+.tagZenn, .tagTech {
+    height: 30px;
+    width: 75px;
     display: flex;
     align-items: center;
     border: 1px solid #E4ECF3;
     padding: 0 8px;
-    margin: 28px 0;
     border-radius: 15px;
 }
 
-.tag-zenn p, .tag-tech p{
+.tagZenn p, .tagTech p {
     font-size: 12px;
     font-weight: 400px;
     line-height: 16px;
-    padding-left: 4px;
 }
 
-.tag-zenn img, .tag-tech img {
+.tagZenn img, .tagTech img {
     height: 27px;
 }
 
-.tag-tech {
+.tagZenn {
+    margin-left: 18px;
+}
+
+.tagTech {
     margin-left: 8px;
 }
 
 article {
     text-align: left;
-    grid-column: 2;
+    grid-column: 1 / 4;
+    padding: 0 19px;
+    background-color: #fff;
 }
 
 article p {
@@ -184,7 +208,7 @@ article img {
     width: 100%;
 }
 
-.section-01 h2, .section-02 h2, .section-03 h2 {
+.section01 h2, .section02 h2, .section03 h2 {
     font-size: 22px;
     font-weight: 700;
     line-height: 34px;
@@ -193,25 +217,40 @@ article img {
     padding-bottom: 15px;
 }
 
-.section-01 p, .section-02 p, .section-03 p {
+.section01 p, .section02 p, .section03 p {
     margin-top: 15px;
 }
 
-.section-01 details {
+.section01 details {
     margin-top: 15px;
+    border: 1px solid #000;
+    padding: 7px;
+    border-radius: 10px;
 }
 
-.article-foot {
-    grid-column: 2;
+details[open] summary {
+    background-color: #F0F5F9;
+}
+
+.section03 a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    text-decoration: none;
+    color: #0f83fd;
+}
+
+.articleFoot {
+    grid-column: 1 / 4;
+    background-color: #fff;
     display: grid;
     grid-template-columns: 10px 1fr 1fr 10px;
     grid-template-rows: auto auto;
     padding-bottom: 30px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1.5px solid #E4ECF3;
 }
 
-.github-button {
+.githubButton {
     grid-column: 2;
     height: 35px;
     display: flex;
@@ -226,67 +265,75 @@ article img {
     line-height: 20px;
 }
 
-.github-icon {
+.githubButton i {
     margin: 0 5px 3px 9px;
 }
 
-.article-foot .like-button {
-    grid-column: 2;
+.articleFoot .likeButton {
     grid-row: 2;
+    width: 50px;
+    height: 50px;
 }
 
-.foot-right-button {
+.articleFoot .likeButton i {
+    font-size: 1.4em;
+}
+
+.footRightButton {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     grid-column: 3;
     grid-row: 2;
 }
 
-.tweet-button {
-    width: 70%;
+.tweetButton {
+    width: 125px;
+    height: 45px;
     display: flex;
     align-items: center;
-    border: 1px solid #000;
-    border-radius: 20px;
+    border: 1px solid #D6E3ED;
+    border-radius: 30px;
+    color: #D6E3ED;
 }
 
-.tweet-button i {
+.tweetButton i {
     margin: 0 5px 0 15px;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
-.report-button {
+.reportButton {
+    margin-right: 20px;
     margin-top: 10px;
 }
 
-.author-twitter {
+.authorTwitter {
     display: grid;
-    grid-column: 2;
-    grid-template-columns: 10px 1fr 5fr 10px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #000;
+    grid-column: 1 / 4;
+    grid-template-columns: 1fr 5fr;
+    padding: 30px 0;
+    background-color: #fff;
 }
 
-.author-twitter img {
+.authorTwitter img {
     grid-column: 2;
-    width: 100%;
+    width: 60px;
     border-radius: 50%;
 }
 
-.author-twitter .text {
+.authorTwitter .text {
     text-align: left;
     padding-left: 15px;
 }
 
 
-.author-twitter-name {
+.authorTwitterName {
     font-size: 16px;
     line-height: 22px;
     font-weight: 700;
     margin-bottom: 15px;
 }
 
-.author-twitter .text p {
+.authorTwitter .text p {
     font-size: 14px;
     font-family: 400;
     line-height: 24px;
@@ -294,7 +341,7 @@ article img {
     margin-bottom: 10px;
 }
 
-.author-twitter-button {
+.authorTwitterButton {
     grid-column: 3;
     text-align: left;
     display: flex;
@@ -302,65 +349,81 @@ article img {
     padding-left: 10px;
 }
 
-.author-follow-button {
-    padding: 1% 3%;
-    border: 1px solid #000;
+.authorFollowButton {
+    padding: 3.5px 14px;
+    border: 1px solid #65717b;
     border-radius: 15px;
     margin-right: 20px;
 }
 
-.author-github-fa {
+.authorFollowButton p {
+    font-size: 13px;
+    color: #65717b;
+}
+
+.authorGithubIcon {
     margin-right: 20px;
 }
 
-.comments-form {
-    grid-column: 2;
+.commentsForm {
+    grid-column: 1 / 4;
+    background-color: #fff;
+    border-top: 1px solid #D6E3ED;
 }
 
-.comments-form h3 {
+.commentsForm h3 {
     margin-top: 35px;
     margin-bottom: 15px;
 }
 
-.comments-form img {
-    width: 80%;
+.commentsForm img {
+    width: 270px;
 }
 
-.login-comment {
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+.loginComment {
+    width: 100%;
+    border-top: 1px solid #D6E3ED;
+    border-bottom: 1px solid #D6E3ED;
+    padding-bottom: 30px;
 }
 
-.login-message {
+.loginMessage {
     font-size: 15px;
     line-height: 27px;
     color: #93a5b1;
     padding: 15px;
 }
 
-.login-comment a p{
+.loginComment a {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.loginComment a p {
+    width: 80px;
+    height: 37px;
     font-size: 15px;
     font-weight: 600;
     line-height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #3EA8FF;
-    padding: 7px;
-    margin: 0 170px;
-    margin-bottom: 30px;
-    border-radius: 10px;
     color: #fff;
+    border-radius: 12px;
 }
 
 .posts-nav {
     grid-column: 1 / 4;
     background-color: #EDF2F7;
     display: grid;
-    grid-template-columns: 10px 1fr 10px;
+    grid-template-columns: auto;
     grid-template-rows: auto;
+    padding-left: 18px;
     padding-bottom: 60px;
 }
 
 .posts-nav h2 {
-    outline: 1px solid #000;
     grid-column: 2 / 3;
     text-align: left;
     padding-top: 50px;
@@ -370,15 +433,14 @@ article img {
 .post {
     grid-column: 2 / 4;
     display: grid;
-    grid-template-columns: 0px 70px 1fr 10px;
-    grid-template-rows: repeat(10, 70px);
-    gap: 40px 0;
+    grid-template-columns: 0px 70px 1fr;
+    grid-template-rows: auto ;
+    gap: 25px 0;
 }
 
 .post figure {
     grid-column: 2;
-    height: 100%;
-    width: 100%;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -405,14 +467,14 @@ article img {
 }
 
 .post-user {
-    width: 30%;
+    outline: 1px solid red;
     display: flex;
     align-items: flex-start;
     align-items: center;
 }
 
 .post-info img {
-    width: 25%;
+    width: 25px;
     border-radius: 50%;
 }
 
@@ -430,12 +492,15 @@ article img {
 }
 
 footer {
-    grid-column: 2;
+    grid-column: 1 / 4;
+    background-color: #fff;
+    padding-bottom: 20px;
 }
 
 .footer-logo {
     display: flex;
     margin-top: 30px;
+    margin-left: 14px;
 }
 
 .footer-logo p {
@@ -450,6 +515,7 @@ footer {
     line-height: 21px;
     color: #93a5b1;
     margin-bottom: 35px;
+    margin-left: 14px;
 }
 
 .footer-logo img {
@@ -460,6 +526,7 @@ footer {
 .footer-nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-left: 14px;
 }
 
 .footer-nav p {

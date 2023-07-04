@@ -12,49 +12,46 @@
 <body>
     <div class="container">
         <header>
-            <a class="header-icon" href="#">
-                <img class="icon-accents" src="./images/icon_accents.png" alt="ヘッダアイコンのアクセント画像">
-                <p class="header-title">Zenn</p>
+            <a class="headerLogo" href="#">
+                <img src="./images/icon_accents.png" alt="ヘッダアイコンのアクセント画像">
+                <p>Zenn</p>
             </a>
-            <div class="header-right">
-                <i class="fa-solid fa-magnifying-glass fa-lg serch-icon"></i>
-                <p class="header-login">Log in</p>
+            <div class="headerRight">
+                <i class="fa-solid fa-magnifying-glass fa-lg serch-icon" style="color: #8C959C;"></i>
+                <p class="headerLoginButton">Log in</p>
             </div>
         </header>
 
         <aside>
-            <a class="author-info" href="#">
+            <a class="authorInfo" href="#">
                 <img src="./images/icon.jpeg">
-                <p class="author-name">Zenn公式</p>
+                <p>Zenn公式</p>
             </a>
 
             <a class="toc">
                 <p>目次</p>
-                <i class="fa-solid fa-angle-down fa-sm toc-down" style="color: #B7C5CE;"></i>
+                <i class="fa-solid fa-angle-down fa-sm" style="color: #B7C5CE;"></i>
             </a>
             
-            <a class="like-button">
-                <span class="fa-stack fa-lg">
-                    <i class="fa-solid fa-circle fa-stack-2x circle-icon" style="color: #EDF2F7;"></i>
-                    <i class="fa-regular fa-heart fa-stack-1x hart-icon" style="color: #93A5B1;"></i>
-                </span>         
+            <a class="likeButton">
+                <i class="fa-regular fa-heart fa-lg" style="color: #93A5B1;"></i>
             </a>
         </aside>
 
         <main>
-            <div class="article-title">
-                <img width="17%" src="./images/📝.svg" alt="メモと鉛筆">
+            <div class="articleTitle">
+                <img width="75px" src="./images/📝.svg" alt="メモと鉛筆">
                 <h2>Zennの2種類の執筆方法について</h2>
                 <p>2020/09/06に公開・約1,200字</p>
             </div>
 
-            <div class="article-tag">
+            <div class="articleTag">
 
-                <a class="tag-zenn">
+                <a class="tagZenn">
                     <img src="./images/icon_accents.png" alt="">
                     <p>Zenn</p>
                 </a>
-                <a class="tag-tech">
+                <a class="tagTech">
                     <img src="./images/tech-icon.svg" alt="">
                     <p>Tech</p>
                 </a>
@@ -65,32 +62,30 @@
                 <h1>Zenn の執筆方法は 2 種類</h1>
                 <p>Zennのコンテンツは次のいずれかの方法で作成します。</p>
 
-                <sectio class="section-01">             
+                <sectio class="section01">             
                     <h2>1. Webエディター</h2>
                     <img src="./images/content_img01.png" alt="">
                     <p>ブラウザ上で動くエディターです。Zennにログインした状態で使用します。</p>
                     
                     <details>
                         <summary>ショートカットを使用しよう</summary>
-                        <p>
-                            オンラインのmarkdownエディターでは、以下のショートカットを使用できます。
-                            <ul>
-                                <li>Ctrl + P（プレビュー）：markdownがどのように表示されるかをチェックできます。
-                                    もう一度ショートカットを実行すると、エディターに戻ります。
-                                </li>
-                                <li>Ctrl + S（内容の保存）：変更内容を保存します。</li>
-                                <li>
-                                    Ctrl + I（埋め込み）：ツイートや YouTube、CodePen、SpeakerDeck 
-                                    などの埋め込みコンテンツを挿入するためのモーダルが表示されます。
-                                </li>
-                            </ul>
-                            ※ Mac の場合はCtrlの代わりに⌘キーを使用します。
-                        </p>
+                        <p>オンラインのmarkdownエディターでは、以下のショートカットを使用できます。</p>
+                        <ul>
+                            <li>Ctrl + P（プレビュー）：markdownがどのように表示されるかをチェックできます。
+                                もう一度ショートカットを実行すると、エディターに戻ります。
+                            </li>
+                            <li>Ctrl + S（内容の保存）：変更内容を保存します。</li>
+                            <li>
+                                Ctrl + I（埋め込み）：ツイートや YouTube、CodePen、SpeakerDeck 
+                                などの埋め込みコンテンツを挿入するためのモーダルが表示されます。
+                            </li>
+                        </ul>
+                        <p>※ Mac の場合はCtrlの代わりに⌘キーを使用します。</p>
                     </details>
 
                 </section>
 
-                <section class="section-02">
+                <section class="section02">
                     <h2>2. ローカルのテキストエディター + CLI</h2>
                     <img src="./images/content_img02.png" alt="">
                     <img src="./images/content_img03.png" alt="">
@@ -100,7 +95,7 @@
                     </p>
                 </section>
 
-                <section class="section-03">
+                <section class="section03">
                     <p>📘 <a href="#">Zenn と GitHub リポジトリを連携する →</a></p>
                     <p>
                         リポジトリ連携時には、ローカルでmarkdownファイルを作成し、好きなテキストエディターで編集を行います。
@@ -115,28 +110,25 @@
                 </section>
             </article>
 
-            <div class="article-foot">
-                <a class="github-button">
-                    <i class="fa-brands fa-github fa-lg github-icon"></i>
+            <div class="articleFoot">
+                <a class="githubButton">
+                    <i class="fa-brands fa-github fa-lg"></i>
                     <p>GitHubで編集を提案</p>
                 </a>
 
-                <a class="like-button">
-                    <span class="fa-stack fa-lg">
-                        <i class="fa-solid fa-circle fa-stack-2x circle-icon" style="color: #EDF2F7;"></i>
-                        <i class="fa-regular fa-heart fa-stack-1x hart-icon" style="color: #93A5B1;"></i>
-                    </span>         
+                <a class="likeButton">
+                    <i class="fa-regular fa-heart" style="color: #93A5B1;"></i>  
                 </a>
 
                 </a>
 
-                <div class="foot-right-button">
-                    <a class="report-button">
-                        <i class="fa-solid fa-angle-down"></i>
+                <div class="footRightButton">
+                    <a class="reportButton">
+                        <i class="fa-solid fa-angle-down" style="color: #D6E3ED;"></i>
                     </a>
 
-                    <a class="tweet-button">
-                        <i class="fa-brands fa-twitter"></i>
+                    <a class="tweetButton">
+                        <i class="fa-brands fa-twitter" style="color: #8F9FAA;"></i>
                         <p>ツイート</p>
                     </a>
                 </div>
@@ -464,8 +456,6 @@
                 <img src="./images/classmethod-logo-small.svg" width="30%">
             </figure>
         </footer>
-
-
     </div>
 </body>
 
