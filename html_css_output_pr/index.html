@@ -11,15 +11,17 @@
 <body>
     <div class="container">
         <header>
-            <a class="headerLogo" href="#">
-                <img src="./images/icon_accents.png" alt="ヘッダロゴのアクセント画像">
-                <p>Zenn</p>
-            </a>
-            <div class="headerRightItems">
-                <i class="fa-solid fa-magnifying-glass serch-icon" style="color: #8C959C;"></i>
-                <a href="#" class="headerLoginButton">
-                    <p>Log in</p>
+            <div class="headerContainer">
+                <a class="headerLogo" href="#">
+                    <img src="./images/icon_accents.png" alt="ヘッダロゴのアクセント画像">
+                    <p>Zenn</p>
                 </a>
+                <div class="headerRightItems">
+                    <i class="fa-solid fa-magnifying-glass serch-icon" style="color: #8C959C;"></i>
+                    <a href="#" class="headerLoginButton">
+                        <p>Log in</p>
+                    </a>
+                </div>
             </div>
         </header>
 
@@ -214,48 +216,64 @@
                         </div>
                     </div>
 
-                    <div class="sideAuthorAccount">
-                        <div class="sideAuthorAccountTop">
-                            <img src="./images/icon.jpeg" alt="著者のアカウント画像">
-                        </div>
-
-                        <div class="sideAuthorAccountTopRight">
-                            <h3>Zenn公式</h3>
-                            <div class="sideAuthorAccountButton">
-                                <a class="sideAuthorAccountFollow">
-                                    <p>フォロー</p>
-                                </a>
-
-                                <a class="sideAuthorAccountGitHub">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-
-                                <a class="sideAuthorAccountTwitter">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </a>
+                    <div class="sideSticky">
+                        <div class="sideAuthorAccount">
+                            <div class="sideAuthorAccountTop">
+                                <img src="./images/icon.jpeg" alt="著者のアカウント画像">
                             </div>
+                            
+                            <div class="sideAuthorAccountTopRight">
+                                <h3>Zenn公式</h3>
+                                <div class="sideAuthorAccountButton">
+                                    <a class="sideAuthorAccountFollow">
+                                        <p>フォロー</p>
+                                    </a>
+                                    
+                                    <a class="sideAuthorAccountGitHub">
+                                        <i class="fa-brands fa-github" style="color: #8F9FAA;"></i>
+                                    </a>
+                                    
+                                    <a class="sideAuthorAccountTwitter">
+                                        <i class="fa-brands fa-twitter" style="color: #8F9FAA;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="sideAuthorAccountDown">
+                                <p>Zennの使い方や開発状況を発信する公式アカウントです。</p>
+                            </div>
+                            
                         </div>
-
-                        <div class="sideAuthorAccountDown">
-                            <p>Zennの使い方や開発状況を発信する公式アカウントです。</p>
+                        
+                        <div class="sideToc">
+                            <p>目次</p>
+                            <ul>
+                                <li>Zennの執筆方法は2種類</li>
+                                <li>1. Webエディター</li>
+                                <li>2. ローカルのテキストエディター + CLI</li>
+                            </ul>
                         </div>
-
-                    </div>
-
-                    <div class="sideToc">
-                        <p>目次</p>
-                        <ul>
-                            <li>Zennの執筆方法は2種類</li>
-                            <li>1. Webエディター</li>
-                            <li>2. ローカルのテキストエディター + CLI</li>
-                        </ul>
                     </div>
                 </aside>
 
+                <div class="leftSideButtonSticky">
+                    <div class="leftSideButton">
+                        <a class="leftSideLikeButton">
+                            <i class="fa-regular fa-heart" style="color: #8F9FAA;"></i>
+                        </a>
+                        <p>81</p>
+                        
+                        <a class="leftSideTwitterButton">
+                            <i class="fa-brands fa-twitter" style="color: #8F9FAA;"></i>
+                        </a>
+                        <p>ツイート</p>
+                    </div>
+                </div>
+                
                 <div class="commentForm">
                     <h3>Discussion</h3>
                     <img src="./images/discussion.png" alt="ディスカッションをしている画像">
-    
+                    
                     <div class="commentFormLogin">
                         <p>ログインするとコメントできます</p>
                         <a>
@@ -483,57 +501,58 @@
         </main>
 
         <footer>
-            <a class="footerLogo">
-                <img src="./images/icon_accents.png" alt="フッダロゴのアクセント画像">
-                <p>Zenn</p>
-            </a>
-            <p class="footerText">エンジニアのための情報共有コミュニティ</p>
+            <div class="footerContainer">
+                <a class="footerLogo">
+                    <img src="./images/icon_accents.png" alt="フッダロゴのアクセント画像">
+                    <h3>Zenn</h3>
+                </a>
+                <p class="footerText">エンジニアのための<span>情報共有コミュニティ</span></p>
 
-            <nav class="footerNav">
-                <div class="about">
-                    <p>About</p>
-                    <ul>
-                        <li>Zennについて</li>
-                        <li>運営会社</li>
-                        <li>お知らせ・リリース</li>
-                    </ul>
+                <nav class="footerNav">
+                    <div class="about">
+                        <p>About</p>
+                        <ul>
+                            <li>Zennについて</li>
+                            <li>運営会社</li>
+                            <li>お知らせ・リリース</li>
+                        </ul>
+                    </div>
+
+                    <div class="guides">
+                        <p>Guides</p>
+                        <ul>
+                            <li>使い方</li>
+                            <li>Publication</li>
+                            <li>よくある質問</li>
+                        </ul>
+                    </div>
+
+                    <div class="links">
+                        <p>Links</p>
+                        <ul>
+                            <li>Twitter</li>
+                            <li>GitHub</li>
+                            <li>メディアキット</li>
+                        </ul>
+                    </div>
+
+                    <div class="legal">
+                        <p>Legal</p>
+                        <ul>
+                            <li>利用規約</li>
+                            <li>プライバシーポリシー</li>
+                            <li>特商法表記</li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="footerAnnounce">
+                    <p>DevelopersIO 2023</p>
+                    <p>7.7(金)～7.8(土) 開催決定</p>
+
+                    <img src="./images/classmethod-logo-small.svg" alt="classmethodと書かれたロゴ画像" width="100px">
                 </div>
-
-                <div class="guides">
-                    <p>Guides</p>
-                    <ul>
-                        <li>使い方</li>
-                        <li>Publication</li>
-                        <li>よくある質問</li>
-                    </ul>
-                </div>
-
-                <div class="links">
-                    <p>Links</p>
-                    <ul>
-                        <li>Twitter</li>
-                        <li>GitHub</li>
-                        <li>メディアキット</li>
-                    </ul>
-                </div>
-
-                <div class="legal">
-                    <p>Legal</p>
-                    <ul>
-                        <li>利用規約</li>
-                        <li>プライバシーポリシー</li>
-                        <li>特商法表記</li>
-                    </ul>
-                </div>
-            </nav>
-
-            <div class="footerAnnounce">
-                <p>DevelopersIO 2023</p>
-                <p>7.7(金)～7.8(土) 開催決定</p>
-
-                <img src="./images/classmethod-logo-small.svg" alt="classmethodと書かれたロゴ画像" width="100px">
             </div>
-
         </footer>
     </div>
 </body>
