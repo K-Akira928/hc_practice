@@ -1,0 +1,969 @@
+/* モバイル~タブレット用 */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif, "Segoe UI Emoji";
+    background-color: #EDF2F7;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #E4ECF3;
+}
+
+.headerContainer {
+    display: flex;
+    height: 63px;
+    justify-content: space-between;
+    padding: 0 13px;
+}
+
+.headerContainer a {
+    text-decoration: none;
+}
+
+.headerLogo {
+    display: flex;
+    align-items: center;
+}
+
+.headerLogo img {
+    height: 34px;
+}
+
+.headerLogo p {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 29px;
+    color: rgba(0, 0, 0, 82);
+}
+
+.headerRightItems {
+    display: flex;
+    align-items: center;
+}
+
+.headerLoginButton p {
+    font-family: Inter, BlinkMacSystemFont, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #3EA8FF;
+    border-radius: 7px;
+    padding: 7px 11px;
+    margin: 0 8px 0 25px;
+}
+
+.topNav {
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 1px solid #E4ECF3;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 0 20px 0 20px;
+}
+
+.authorAccount {
+    display: flex;
+    align-items: center;
+    padding-right: 40%;
+    text-decoration: none;
+}
+
+.authorAccount img {
+    height: 36px;
+    border-radius: 50%;
+}
+
+.authorAccount p {
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 82);
+    padding-left: 8px;
+}
+
+.navRightItems {
+    display: flex;
+}
+
+.navToc {
+    display: flex;
+    align-items: center;
+}
+
+.navToc p {
+    font-size: 15px;
+}
+
+.navToc i {
+    font-size: 0.7em;
+    margin: 6px 0 0 3px;
+}
+
+.navLikeButton {
+    display: flex;
+    align-items: center;
+    width: 37px;
+    height: 39px;
+    background-color: #EDF2F7;
+    border-radius: 50%;
+    margin: 0 0 2px 19px;
+}
+
+.navLikeButton i {
+    margin: 0 auto;
+}
+
+article {
+    text-align: center;
+}
+
+.articleTitle {
+    height: 278px;
+}
+
+.articleTitle img {
+    margin-top: 54px;
+    margin-bottom: 15px;
+}
+
+.articleTitle h2 {
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: 0.3px;
+    color: rgba(0, 0, 0, 82);
+    margin-bottom: 20px;
+}
+
+.articleTitle p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: #65717b;
+}
+
+.articleContent {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-rows: repeat(5, auto);
+    background-color: #fff;
+}
+
+.articleTag {
+    height: 79px;
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+}
+
+.tagZenn, .tagTech {
+    width: 73px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #E4ECF3;
+    border-radius: 15px;
+}
+
+.tagTech {
+    margin-left: 8px;
+}
+
+.tagZenn p, .tagTech p {
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 82);
+    padding-right: 3px;
+}
+
+.tagZenn img, .tagTech img {
+    height: 27px;
+    border-radius: 10px;
+}
+
+section {
+    grid-column: 2;
+    text-align: left;
+}
+
+.content {
+    text-align: left;
+    grid-column: 2;
+    line-height: 30px;
+}
+
+.section01, .section02 {
+    margin-bottom: 55px;
+}
+
+.section01 h1 {
+    font-size: 26px;
+    line-height: 38px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 82);
+    margin-top: 63px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #E4ECF3;
+}
+
+.section02 h2, .section03 h2 {
+    font-size: 22px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #E4ECF3;
+    margin-bottom: 25px;
+}
+
+.section02 img, .section03 img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.section02 details {
+    border: 1px solid #E1EBF2;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.section02 details[open] {
+    background-color: #F0F5F9;
+}
+
+.section02 details summary {
+    font-size: 14px;
+    line-height: 23px;
+}
+
+details p, details li {
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.section03 a {
+    display: block;
+    font-weight: 700;
+    text-decoration: none;
+    color: #0f83fd;
+    margin: 35px 0;
+}
+
+.sectionLink02 {
+    padding-bottom: 35px;
+    border-bottom: 2px solid #E4ECF3;
+}
+
+.articleFoot {
+    grid-column: 2;
+    border-bottom: 1px solid #E4ECF3;
+}
+
+.githubButton {
+    width: 185px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E4ECF3;
+    border-radius: 7px;
+    margin-bottom: 40px;
+}
+
+.githubButton p {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 82);
+    letter-spacing: 0.7px;
+    padding-left: 5px;
+}
+
+.githubButton i {
+    font-size: 1.1em;
+}
+
+.articleFootDownItems {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.articleFootLeftItems {
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.articleFootLeftItems .likeButton {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    background-color: #EDF2F7;
+    border-radius: 50%;
+}
+
+.articleFootLeftItems .likeButton i {
+    font-size: 1.3em;
+    margin: 0 auto;
+}
+
+.articleFootLeftItems p {
+    font-size: 12px;
+    line-height: 22px;
+    color: #8f9faa;
+}
+
+.articleFootRightItems {
+    width: 148px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.articleFootRightItems .tweetButton {
+    width: 115px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #D6E3ED;
+    border-radius: 30px;
+}
+
+.articleFootRightItems .tweetButton i {
+    font-size: 1.4em;
+}
+
+.articleFootRightItems .tweetButton p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #8F9FAA;
+    padding-left: 5px;
+}
+
+.articleAuthorAccount {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding: 30px 0;
+}
+
+.articleAuthorAccount img {
+    grid-column: 1;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.authorAccountInfo {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.authorAccountInfo h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 82);
+    margin-bottom: 10px;
+}
+
+.authorAccountInfo p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #65717b;
+}
+
+.articleAuthorAccountButton {
+    display: flex;
+    margin-top: 10px;
+}
+
+.articleAuthorAccountButton .authorAccountFollow {
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #65717b;
+    border-radius: 15px;
+}
+
+.articleAuthorAccountButton .authorAccountFollow p {
+    font-size: 13px
+}
+
+.articleAuthorAccountButton .authorAccountGithub {
+    margin: 0 20px;
+}
+
+aside, .leftSideButton {
+    display: none;
+}
+
+.commentForm {
+    grid-column: 1;
+    background-color: #fff;
+    border-top: 2px solid #E4ECF3; 
+}
+
+.commentForm h3 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 34px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.commentForm img {
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.commentFormLogin {
+    border-top: 1px solid #E4ECF3;
+}
+
+.commentFormLogin p {
+    font-size: 15px;
+    line-height: 27px;
+    color: #8f9faa;
+    margin-top: 15px;
+}
+
+.commentFormLogin a {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.commentFormLogin a p {
+    width: 77px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 21px;
+    display: flex;
+    justify-content: center;
+    background-color: #3EA8FF;
+    color: #fff;
+    border-radius: 8px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.postNav {
+    background-color: #EDF2F7;
+    margin: 0 20px;
+    padding-bottom: 60px;
+}
+
+.postNav h2 {
+    font-size: 27px;
+    line-height: 49px;
+    color: rgba(0, 0, 0, 82);
+    margin-top: 40px;
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    margin-top: 20px;
+}
+
+.post figure {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.post .postRightItems {
+    padding-left: 20px;
+}
+
+.post .postRightItems h3 {
+    font-size: 17px;
+    line-height: 25px;
+    padding-bottom: 7px;
+}
+
+.postInfo {
+    display: flex;
+    align-items: center;
+}
+
+.postInfo img {
+    width: 25px;
+    border-radius: 50%;
+}
+
+.postAuthor {
+    display: flex;
+    align-items: center;
+}
+
+.postAuthorName {
+    font-size: 13px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 82);
+    margin-left: 8px;
+}
+
+.postDate {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    color: #65717b;
+    margin-left: 8px;
+}
+
+.postLike {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.postLike i {
+    font-size: 0.7em;
+    padding-bottom: 2px;
+}
+
+.postLike p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    color: #8f9faa;
+}
+
+footer {
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+.footerLogo {
+    display: flex;
+    padding-top: 30px;
+}
+
+.footerLogo img {
+    width: 30px;
+    height: 30px;
+}
+
+.footerLogo h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.footerText {
+    font-size: 13px;
+    line-height: 21px;
+    color: #93a5b1;
+    margin-bottom: 35px;
+}
+
+.footerNav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footerNav p {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 23px;
+}
+
+.footerNav li {
+    font-size: 14px;
+    line-height: 25px;
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.about, .guides, .links, .legal {
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.footerAnnounce {
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    border-top: 1px solid #E4ECF3;
+    padding: 15px 0;
+}
+
+.footerAnnounce img {
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 577px) {
+
+    .headerLoginButton p {
+        padding: 10px 18px;
+    }
+
+    .articleContent {
+        margin: 0 25px;
+        border-radius: 10px;
+    }
+
+    .commentForm {
+        margin: 30px 25px;
+        border: none;
+        padding-top: 20px;
+        border-radius: 10px;
+    }
+
+    .post {
+        grid-template-columns: 90px 1fr;
+    }
+
+    .post figure {
+        height: 90px;
+    }
+
+    .articleAuthorAccount {
+        grid-template-columns: 80px 1fr;
+    }
+
+    .articleAuthorAccount img {
+        width: 100%;
+    }
+
+    .authorAccountInfo {
+        width: 90%;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .topNav {
+        display: none;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: 1fr 330px;
+    }
+
+    .articleTitle {
+        grid-column: 1 / 3;
+    }
+
+    .articleTitle h2 {
+        font-size: 31px;
+        line-height: 46px;
+    }
+
+    .articleTitle p {
+        display: none;
+    }
+
+    .articleContent {
+        grid-column: 1;
+    }
+    
+    aside {
+        display: block;
+        grid-column: 2;
+        grid-row: 2 / 5;
+        margin-right: 25px;
+        margin-bottom: 30px;
+    }
+
+    .articleInfo {
+        background-color: #fff;
+        border-radius: 10px;
+    }
+
+    .author, .releaseDate, .articleUpdate, .articleWordCount {
+        display: flex;
+        justify-content: space-between;
+        padding: 18px 0;
+        margin: 0 20px;
+        border-bottom: 1px solid #D6E3ED;
+    }
+
+    .articleWordCount {
+        border: none;
+    }
+
+    .articleInfoLeftItems {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        line-height: 18px;
+        color: #65717b;
+    }
+
+    .articleInfoLeftItems i {
+        font-size: 1.1em;
+    }
+
+    .articleInfoLeftItems p {
+        padding-left: 5px;
+    }
+
+    .articleInfoRightItems {
+        display: flex;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(0, 0, 0, 82);
+    }
+
+    .author .articleInfoRightItems img{
+        height: 22px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+
+    .articleUpdate .articleInfoRightItems i {
+        font-size: 1.2em;
+        margin-right: 5px;
+    }
+
+    .sideSticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20px;
+    }
+
+    .sideAuthorAccount {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        grid-row: auto auto;
+        background-color: #fff;
+        margin-top: 40px;
+        border-radius: 10px;
+    }
+
+    .sideAuthorAccountTop img {
+        grid-column: 1;
+        width: 60px;
+        border-radius: 50%;
+        margin: 20px 5px 5px 20px;
+    }
+
+    .sideAuthorAccountTopRight {
+        grid-column: 2;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .sideAuthorAccountButton {
+        display: flex;
+    }
+
+    .sideAuthorAccountFollow {
+        display: flex;
+        width: 73px;
+        height: 30px;
+        font-size: 13px;
+        justify-content: center;
+        align-items: center;
+        color: #65717b;
+        border: 1px solid #65717b;
+        border-radius: 15px;
+        margin-top: 4px;
+    }
+
+    .sideAuthorAccountGitHub {
+        font-size: 1.1em;
+        display: flex;
+        align-items: center;
+        margin: 0 10px;
+    }
+
+    .sideAuthorAccountTwitter {
+        font-size: 1.1em;
+        display: flex;
+        align-items: center;
+    }
+
+    .sideAuthorAccountDown {
+        font-size: 14px;
+        line-height: 24px;
+        grid-column: 1 / 3;
+        text-align: left;
+        color: rgba(0, 0, 0, 82);
+        margin: 0 20px 20px 20px;
+    }
+
+    .sideToc {
+        background-color: #fff;
+        margin-top: 40px;
+        border-radius: 10px;
+        text-align: left;
+    }
+
+    .sideToc p {
+        font-size: 16px;
+        line-height: 29px;
+        font-weight: 700;
+        padding: 15px 20px;
+    }
+
+    .sideToc ul {
+        padding-left: 10px;
+        padding-bottom: 20px;
+    }
+
+    .sideToc li {
+        font-size: 14px;
+        line-height: 21px;
+        padding: 5px 30px;
+        list-style-type: none;
+    }
+
+    .postNav {
+        max-width: 870px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        gap: 0 40px;
+    }
+
+    .postNav h2 {
+        width: 100%;
+    }
+
+    .post {
+        grid-template-columns: 90px 1fr;
+        width: 47%;
+    }
+
+    .post figure {
+        height: 90px;
+    }
+
+    .footerContainer {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .footerText {
+        grid-column: 1 / 3;
+        grid-row: 2;
+    }
+
+    .footerNav {
+        flex-wrap: nowrap;
+        grid-column: 1 / 3;
+    }
+
+    .footerAnnounce {
+        grid-column: 1 / 3;
+        grid-row: 4;
+    }
+    
+}
+
+@media screen and (min-width: 1301px) {
+    .headerContainer {
+        margin: 0 auto;
+        max-width: 1150px;
+    }
+
+    article {
+        grid-template-columns: 50px 2fr 0.7fr;
+        margin: 0 auto;
+        max-width: 1250px;
+    }
+
+    .articleTitle {
+        grid-column: 1 / 4;
+    }
+
+    .articleContent {
+        grid-column: 2;
+    }
+
+    aside {
+        grid-column: 3;
+    }
+
+    .leftSideButtonSticky {
+        display: block;
+        grid-column: 1;
+        grid-row: 2 / 5;
+    }
+
+    .leftSideButton {
+        display: block;
+        height: 160px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20px;
+    }
+
+    .leftSideButton p {
+        font-size: 11px;
+        line-height: 12px;
+        margin-top: 3px;
+        margin-bottom: 20px;
+        color: #8F9FAA;
+    }
+
+    .leftSideLikeButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+    .leftSideLikeButton i {
+        padding-top: 2px;
+        font-size: 1.3em;
+    }
+
+    .leftSideTwitterButton {
+        font-size: 1.5em;
+    }
+
+    .commentForm {
+        grid-column: 2;
+    }
+
+    .footerContainer {
+        margin: 0 auto;
+        max-width: 1150px;
+        grid-template-columns: 2fr 8fr;
+    }
+
+    .footerLogo {
+        align-items: center;
+    }
+
+    .footerText span{
+        display: block;
+    }
+
+    .footerNav {
+        grid-column: 2;
+        grid-row: 1 / 3;
+        margin-top: 45px;
+    }
+
+    .footerAnnounce p {
+        display: none;
+    }
+}
