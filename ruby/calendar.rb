@@ -9,8 +9,8 @@ option_params = {}
 opt.on('-m VAL') { |v| v }
 opt.parse!(ARGV, into: option_params)
 
-this_year = Date.today.year
-select_month = option_params[:m] || Date.today.mon.to_s
+today = Date.today
+select_month = option_params[:m] || today.mon.to_s
 
 # 表示する月の最初の曜日を取得する
 def first_month_wday(year, month)
@@ -49,4 +49,4 @@ raise "#{select_month} is neither a month number (1..12) nor a name" unless Rang
   i == select_month
 end
 
-display_terminal(this_year, select_month.to_i)
+display_terminal(today.year, select_month.to_i)
