@@ -8,10 +8,10 @@ require_relative '../lib/suica'
 # 拡張された自動販売機のテストクラスです
 class AdvanceVendingMachineTest < Minitest::Test
   def setup
+    pepsi = ['ペプシ', 150]
+    monster = ['モンスター', 230]
+    ilohas = ['いろはす', 120]
     @suica = Suica.new
-    pepsi = Juice.new
-    monster = Juice.new('モンスター', 230, 5)
-    ilohas = Juice.new('いろはす', 120, 5)
     @adv_vending_machine = AdvanceVendingMachine.new(pepsi, monster, ilohas)
   end
 

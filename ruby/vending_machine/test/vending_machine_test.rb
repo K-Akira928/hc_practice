@@ -9,7 +9,8 @@ require_relative '../lib/suica'
 class VendingMachineTest < Minitest::Test
   def setup
     @suica = Suica.new
-    pepsi = Juice.new
+    # ジュースのインスタンス生成に必要な情報を記述
+    pepsi = ['ペプシ', 150]
     @vending_machine = VendingMachine.new(pepsi)
   end
 
