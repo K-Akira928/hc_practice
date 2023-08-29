@@ -18,6 +18,9 @@ class Suica
 
   # Suicaの残高を減らす
   def deposit_sub(price)
+    # Suicaの残高を超えて減算しようとするとエラー
+    raise '残高が足りません' if @deposit < price
+
     @deposit -= price
   end
 end
