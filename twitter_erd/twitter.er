@@ -38,7 +38,7 @@
   updated_at {label: "date"}
 
 [follows] {bgcolor: "#ececfc"}
-  *+user_id {label: "FK(users)"}
+  *+from_user_id {label: "FK(users)"}
   *+to_user_name_id {label: "FK(users)"}
   +event_id {label: "FK(event_types)"}
   created_at {label: "date"}
