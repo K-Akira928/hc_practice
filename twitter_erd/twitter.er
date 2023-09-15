@@ -60,8 +60,8 @@
 
 [message_rooms] {bgcolor: "#ececfc"}
   *room_id {label: "char, uniq"}
-  +user_id {label: "FK(users)"}
-  +attn_user_name_id {label: "FK(users)"}
+  +from_user_id {label: "FK(users)"}
+  +attn_user_id {label: "FK(users)"}
   created_at {label: "date"}
   updated_at {label: "date"}
 
