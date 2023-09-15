@@ -51,17 +51,11 @@
   created_at {label: "date"}
   updated_at {label: "date"}
 
-[messages] {bgcolor: "#ececfc"}
-  *message_id {label: "char, uniq"}
-  +message_room_id {label: "FK(message_rooms)"}
-  content {label: "text"}
-  created_at {label: "date"}
-  updated_at {label: "date"}
-
 [message_rooms] {bgcolor: "#ececfc"}
   *room_id {label: "char, uniq"}
   +from_user_id {label: "FK(users)"}
   +attn_user_id {label: "FK(users)"}
+  content {label: "text"}
   created_at {label: "date"}
   updated_at {label: "date"}
 
@@ -84,5 +78,3 @@ tweets 1--* bookmarks
 
 event_types 1--* follows
 event_types 1--* likes
-
-message_rooms 1--* messages
