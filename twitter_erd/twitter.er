@@ -1,0 +1,80 @@
+[users] {bgcolor: "#ececfc"}
+  *user_id {label: "varchar, uniq"}
+  email {label: "varchar, uniq"}
+  telephone_number {label: "integer, uniq"}
+  display_name {label: "varchar"}
+  location {label: "varchar"}
+  website {label: "varchar"}
+  date_of_birth {label: "date"}
+  profile_image {label: "text"}
+  avatar_image {label: "text"}
+  created_at {label: "date"}
+  updated_at{label: "date"}
+
+[tweets] {bgcolor: "#ececfc"}
+  *tweet_id {label: "char, uniq"}
+  +user_id {label: "FK(users)"}
+  content {label: "varchar(140)"}
+  created_at {label: "date"}
+  updated_at {label: "date"}
+
+[likes] {bgcolor: "#ececfc"}
+  *+tweet_id {label: "FK(tweets)"}
+  *+user_id {label: "FK(users)"}
+  +event_id {label: "FK(event_types)"}
+  created_at {label: "date"}
+  updated_at {label: "date"}
+
+[retweets] {bgcolor: "#ececfc"}
+  *+tweet_id {label: "FK(tweets)"}
+  *+user_id {label: "FK(users)"}
+  created_at {label: "date"}
+  updated_at {label: "date"}
+
+[bookmarks] {bgcolor: "#ececfc"}
+  *+tweet_id {label: "FK(tweets)"}
+  *+user_id {label: "FK(users)"}
+  created_at {label: "date"}
+  updated_at {label: "date"}
+
+[follows] {bgcolor: "#ececfc"}
+  *+from_user_id {label: "FK(users)"}
+  *+to_user_name_id {label: "FK(users)"}
+  +event_id {label: "FK(event_types)"}
+  created_at {label: "date"}
+  updated_at {label: "date"}
+
+[event_types] {bgcolor: "#ececfc"}
+  *event_id {label: "integer, uniq"}
+  type_name {label: "varchar, uniq"}
+  notification_content {label: "varchar, uniq"}
+  created_at {label: "date"}
+  updated_at {label: "date"}
+
+[message_rooms] {bgcolor: "#ececfc"}
+  *room_id {label: "char, uniq"}
+  +from_user_id {label: "FK(users)"}
+  +attn_user_id {label: "FK(users)"}
+  content {label: "text"}
+  created_at {label: "date"}
+  updated_at {label: "date"}
+
+# Cardinality    Syntax
+# 0 or 1         ?
+# exactly 1      1
+# 0 or more      *
+# 1 or more      +
+
+users 1--* tweets
+users 1--* likes
+users 1--* retweets
+users 1--* bookmarks
+users 1--* follows
+users 1--* message_rooms
+
+tweets 1--* likes
+tweets 1--* retweets
+tweets 1--* bookmarks
+
+event_types 1--* follows
+event_types 1--* likes
