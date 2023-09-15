@@ -1,5 +1,5 @@
 [users] {bgcolor: "#ececfc"}
-  *user_name {label: "varchar, uniq"}
+  *user_id {label: "varchar, uniq"}
   email {label: "varchar, uniq"}
   telephone_number {label: "integer, uniq"}
   display_name {label: "varchar"}
@@ -13,32 +13,32 @@
 
 [tweets] {bgcolor: "#ececfc"}
   *tweet_id {label: "char, uniq"}
-  +user_name_id {label: "FK(users)"}
+  +user_id {label: "FK(users)"}
   content {label: "varchar(140)"}
   created_at {label: "date"}
   updated_at {label: "date"}
 
 [likes] {bgcolor: "#ececfc"}
   *+tweet_id {label: "FK(tweets)"}
-  *+user_name_id {label: "FK(users)"}
+  *+user_id {label: "FK(users)"}
   +event_id {label: "FK(event_types)"}
   created_at {label: "date"}
   updated_at {label: "date"}
 
 [retweets] {bgcolor: "#ececfc"}
   *+tweet_id {label: "FK(tweets)"}
-  *+user_name_id {label: "FK(users)"}
+  *+user_id {label: "FK(users)"}
   created_at {label: "date"}
   updated_at {label: "date"}
 
 [bookmarks] {bgcolor: "#ececfc"}
   *+tweet_id {label: "FK(tweets)"}
-  *+user_name_id {label: "FK(users)"}
+  *+user_id {label: "FK(users)"}
   created_at {label: "date"}
   updated_at {label: "date"}
 
 [follows] {bgcolor: "#ececfc"}
-  *+user_name_id {label: "FK(users)"}
+  *+user_id {label: "FK(users)"}
   *+to_user_name_id {label: "FK(users)"}
   +event_id {label: "FK(event_types)"}
   created_at {label: "date"}
@@ -60,7 +60,7 @@
 
 [message_rooms] {bgcolor: "#ececfc"}
   *room_id {label: "char, uniq"}
-  +user_name_id {label: "FK(users)"}
+  +user_id {label: "FK(users)"}
   +attn_user_name_id {label: "FK(users)"}
   created_at {label: "date"}
   updated_at {label: "date"}
