@@ -35,3 +35,17 @@ const modifyDateDays = (date, lastDate) => {
   return days;
 };
 
+const displayCalendar = (date, lastDate) => {
+  const days = modifyDateDays(date, lastDate);
+  console.log(`     ${date.getFullYear()}年 ${date.getMonth() + 1}月     `);
+
+  console.log('日 月 火 水 木 金 土');
+
+  days.forEach((day, index) => {
+    process.stdout.write(day + ' ');
+    if ((index + 1) % 7 === 0) console.log();
+  });
+
+  console.log();
+};
+
