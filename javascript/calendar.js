@@ -49,3 +49,7 @@ const displayCalendar = (date, lastDate) => {
   console.log();
 };
 
+const date = commandGetDate();
+const lastDate = getLastDate(date);
+
+displayCalendar(date, lastDate);
