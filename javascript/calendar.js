@@ -14,3 +14,11 @@ const commandGetDate = () => {
     return nowDate;
   }
 };
+
+const getLastDate = (date) => {
+  const lastDate = new Date(date.getTime());
+  lastDate.setMonth(lastDate.getMonth() + 1);
+  lastDate.setDate(0);
+  return lastDate;
+};
+
