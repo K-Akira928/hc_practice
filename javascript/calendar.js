@@ -22,3 +22,16 @@ const getLastDate = (date) => {
   return lastDate;
 };
 
+const modifyDateDays = (date, lastDate) => {
+  const days = [...Array(lastDate.getDate())];
+  const spacingCount = Number(date.getDay());
+
+  for (let i = 0; i < days.length; i++) {
+    days[i] = (' ' + (i + 1).toString()).slice(-2);
+  }
+
+  for (let i = 0; i < spacingCount; i++) days.unshift('  ');
+
+  return days;
+};
+
